@@ -1,0 +1,142 @@
+/* Header */
+.new-nav-right{
+    margin-right: 2rem;
+}
+.new-nav-right li{
+    padding: 0 .3rem;
+}
+.new-nav-right li a{
+    font-size: 1rem;
+    font-weight: 500;
+    transition: .5s;
+}
+.new-nav-right li a:hover{
+    color: #fc5e03 !important;
+}
+.my-css-btn{
+    border-color: #fc5e03;
+    color: #fc5e03;
+    transition: .6s;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 4px 12px;
+}
+.my-css-btn:hover{
+    background-color: #fc5e03;
+}
+
+/* logo header */
+.my-css-logo i{
+    color: #fc5e03;
+    border: 2px solid #fc5e03;
+    border-radius: 10px;
+    padding: 6px 0;
+}
+.my-css-logo span{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* slider-section */
+.slider-section{
+    background: url(./img/ia_200000012.jpg) bottom center no-repeat;
+    padding: 180px 0;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.slider-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    z-index: -1;
+}
+.my-css-btn-2{
+    color: #fff;
+}
+.slider-text h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.slider-text h1 {
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+/* about */
+.about-section{
+    background-color: #f7f9ff;
+}
+.my-css-about-img{
+    height: 400px;
+}
+.about-text {
+    margin-top: 100px;
+}
+.about-text h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.about-text p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 37px;
+}
+/* curses */
+.curses-item{
+    height: 235px;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 25%);
+}
+
+.img-item{
+    width: 40%;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+.img-item img{
+    height: 100%;
+    width: auto !important;
+    max-width: inherit;
+    
+}
+
+
+.img-item-text{
+    width: 60%;
+    padding: 20px;
+}
+
+/* number-item */
+.number-item h3{
+    font-weight: 700;
+}
+.number-item-section{
+    background-color: #f7f9ff;
+}
+
+/* portfolio */
+.portfolio-item a{
+    position: relative;
+    display: block;
+}
+.portfolio-item a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(252, 94, 3,.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.portfolio-item:hover a::after{
+    opacity: 1;
+    visibility: visible;
+}
